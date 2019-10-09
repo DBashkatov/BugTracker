@@ -34,6 +34,4 @@ CREATE TABLE bug_history (
 );
 
 INSERT INTO person(username, password, firstName, lastName)
-VALUES  ('user1','user1','First ', 'User'),
-		('user2','user2','Second ', 'User'),
-		('user3','user3','Thinrd ', 'User');
+VALUES  ('admin','12345678','First ', 'User');
