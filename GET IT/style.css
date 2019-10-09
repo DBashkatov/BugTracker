@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    
+    background-color: #FEFFFF;
+}
+
+* {
+	color: #17252A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container 
+====================================*/
+.container {
+	display: flex;
+	justify-content: space-between;
+	
+    width: 100%;
+    max-width: 950px;
+    
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Navigation 
+====================================*/
+.nav {
+	background-color: #17252A;
+}
+
+.logo {
+	margin: auto 0;
+	
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 25px;
+	color: #FEFFFF;
+}
+
+.nav__links {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav__link {
+	padding: 13px 15px;
+	
+	color: #FEFFFF;
+	
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	transition: color 0.1s linear;
+}
+
+.nav__link:hover {
+	color: #3AAFA9;
+	
+	padding-bottom: 10px;
+	border-bottom: 3px solid #3AAFA9;
+	
+	cursor: pointer;
+}
+
+.logout__button {
+	padding: 8px 15px;
+	margin: 0 4px 0 10px;
+	
+	background-color: inherit;
+	border: 1px solid #3AAFA9;
+	
+	transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+.logout__button:hover {
+	padding-bottom: 8px;
+	
+	background-color: #3AAFA9;
+	color: #17252A;
+	border: 1px solid #3AAFA9;
+}
+
+
+/* Form 
+====================================*/
+.form {	
+	width: 100%;
+	max-width: 500px;
+}
+
+.form__title {
+	padding: 20px 0;
+	
+	color: #2B7A78;
+	
+	font-size: 3em;
+}
+
+.form__group {
+	display: flex;
+	
+	padding: 8px 0;
+}
+
+.form__label {
+	width: 25%;
+	text-align: right;
+	
+	padding-right: 3%;
+}
+
+.form__field {
+	width: 100%;
+	max-width: 70%;
+}
+
+.form__field--info {
+	font-weight: 700;
+	color: #3AAFA9;
+}
+
+.form__text {
+	padding: 5px;
+	
+	border-radius: 5px;
+	
+	outline: none;
+	border: 1px solid #3AAFA9;
+}
+
+.form__text:focus {
+	padding: 4px;
+	
+	border: 2px solid #3AAFA9;
+}
+
+input.form__text {
+	height: 2em;
+}
+
+textarea.form__text {
+	height: 100px;
+}
+
+.form__text--login {
+	width: 40%;
+}
+
+.form__button {
+	display: block;
+	padding: 4px 13px;
+	margin-left: 28%;
+	margin-top: 13px;
+	
+	color: #17252A;
+	background: #FEFFFF;
+	
+	border: 2px solid #17252A;
+	
+	text-transform: uppercase;
+	
+	transition: background 0.1s linear, color: #FEFFFF;
+	
+	cursor: pointer;
+}
+
+.form__button:hover {
+	background: #17252A;
+	color: #FEFFFF;
+}
+
+/* Radio 
+====================================*/
+.radio__group {
+	margin: 4px 0;
+}
+
+.radio__btn {
+	display: none;
+}
+
+.radio__label {
+	cursor: pointer;
+}
+
+.radio__label:before {
+	display: inline-block;
+	content: '';
+	
+	width: 0.8em;
+	height: 0.8em;
+	
+	margin-right: 5px;
+	border: 0.05em solid #3AAFA9;
+	border-radius: 50%;
+	
+	transition: border 0.1s linear, width 0.1s linear, height 0.1s linear;
+}
+
+.radio__btn:checked + .radio__label:before{
+	border: 0.25em solid #3AAFA9;
+	width: 0.4em;
+	height: 0.4em;
+}
+
+/* Message tab 
+====================================*/
+.message {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	z-index: 1;
+	width: 10%;
+	
+	padding: 30px 40px;
+	
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.3;
+	
+	text-transform: uppercase;
+}
+
+.message--error {
+	background-color: #FEFFFF;
+	border: 2px solid #FD5458;
+	color: #FD5458;
+}
+
+.message--success {
+	background-color: #FEFFFF;
+	border: 2px solid #3AAFA9;
+	color: #3AAFA9;
+}
+
+/* Sidebar 
+====================================*/
+.sidebar{
+	padding-left: 20px;
+	margin-top: 91px;
+}
+
+.sidebar__title {
+	text-align: center;
+	padding-bottom: 15px;
+	
+	color: #2B7A78;
+	font-size: 1.5em;
+}
+
+/* Table 
+====================================*/
+.table {
+	
+	border: 2px solid #3AAFA9;
+	border-collapse: collapse;
+}
+
+.table__head {
+	background-color: #3AAFA9;
+}
+
+
+.table__cell {
+	padding: 8px;
+}
+
+.table__cell--head {
+	color: #FEFFFF;
+}
+
+.table__cell--data {
+	border: 1px solid #DEF2F1;
+}
+
+.table__row:hover {
+	background-color: #DEF2F1;
+}
+
+.userList {
+	display: block;
+	width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
